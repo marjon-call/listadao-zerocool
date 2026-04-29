@@ -235,13 +235,25 @@ contract PoCTest is Test {
 
     uint256 internal bscFork;
     uint256 internal ethFork;
+    bool internal bscForkInit;
     bool internal ethForkInit;
 
+    /// Forks are created lazily so the empty test_PoC() can run in CI / scanner
+    /// environments that haven't provisioned BSC_RPC_URL. Tests that need a
+    /// fork should call _useBscFork() / _useEthereumFork() explicitly.
     function setUp() public {
-        bscFork = vm.createSelectFork(vm.envString("BSC_RPC_URL"));
+        string memory bscUrl = vm.envOr("BSC_RPC_URL", string(""));
+        if (bytes(bscUrl).length > 0) {
+            bscFork = vm.createSelectFork(bscUrl);
+            bscForkInit = true;
+        }
     }
 
     function _useBscFork() internal {
+        if (!bscForkInit) {
+            bscFork = vm.createFork(vm.envString("BSC_RPC_URL"));
+            bscForkInit = true;
+        }
         vm.selectFork(bscFork);
     }
 
