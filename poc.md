@@ -40,20 +40,47 @@ make -f nexus.makefile build
 ## Writing a PoC
 
 The fork test harness is `test/PoC.t.sol`. It is intentionally **independent
-of the in-scope sources**: it forks Ethereum mainnet via `MAINNET_RPC_URL`
-and uses inline minimal interfaces for the contracts it interacts with. This
-means cross-profile import problems can't break it. Follow the same pattern
-when targeting BSC contracts:
+of the in-scope sources** (cross-profile imports break across the 5 distinct
+solc versions in scope), so it uses inline minimal interfaces for everything
+it touches.
 
-1. Switch the fork in `setUp()` to `vm.envString("BSC_RPC_URL")` (or whatever
-   chain the target lives on).
-2. Define a minimal interface inline for each contract you call.
-3. Declare the deployed proxy address as a `constant`.
-4. Deal in tokens with `deal(...)` and prank as the relevant role.
+The harness is **dual-fork**: BSC by default (where 131 of 132 in-scope
+contracts live) plus a lazy Ethereum fork for the cross-chain `ListaOFT`.
+Switch with `_useBscFork()` / `_useEthereumFork()` inside a test.
 
 ```bash
+export BSC_RPC_URL=<bsc-rpc>
+export MAINNET_RPC_URL=<eth-rpc>
 forge test --match-contract PoCTest -vvv
 ```
+
+### Already-defined casts
+
+| Cast | Address | Notes |
+|---|---|---|
+| `stakeManager` | `LISTA_STAKE_MANAGER` | slisBNB stake/unstake orchestrator |
+| `vat` | `VAT` | CDP central accounting |
+| `interaction` | `INTERACTION` | top-level user entrypoint |
+| `oftAdapter` | `LISTA_OFT_ADAPTER_BSC` | bridge BSC side (lock-release) |
+| `oftEth` | `LISTA_OFT_ETH` | bridge ETH side (mint/burn) |
+| `lzBsc`, `lzEth` | LZ V2 endpoint | `0x1a44…728c` on both chains |
+
+Plus 60+ `address constant`s for proxy targets across the CDP, liquid-staking,
+lending, OFT, distributor, and oracle stacks. Add new constants and inline
+interfaces as needed — researchers can grep for the contract they want under
+`src/<Name>_<addr4>/` and copy out the function signatures.
+
+### Gotchas discovered during validation
+
+These were caught while validating the template — useful when adding more
+interfaces later:
+
+- **`Interaction.collaterals(token)`** returns `(address gem, bytes32 ilk, uint32 live, address clip)` — a 4-field struct, not the 6-field Maker shape. `live == 1` means the collateral is enabled.
+- **`ResilientOracle`** uses `peek(address asset)` not `getPrice(address)`. It returns USD prices in **8 decimals** (Chainlink default), not 18.
+- **`MasterVault`** is **not** ERC-4626. `asset()` returns `address(0)` for the native-BNB vault and `vaultToken()` returns the share-token (`ceABNBc`).
+- **`ListaOFTAdapter` (BSC)** and **`ListaOFT` (ETH)** ARE on the same address pattern but `approvalRequired()` differs: adapter requires approval (lock-release), OFT does not (mint-burn).
+- **Shared decimals = 6** on the OFT (LayerZero default); local decimals = 18, so any cross-chain amount loses precision below `1e12` wei.
+- **String literals can't contain unicode arrows** in Solidity assert messages without a `unicode""` literal — keep ASCII.
 
 ## Reference contracts to start with
 
