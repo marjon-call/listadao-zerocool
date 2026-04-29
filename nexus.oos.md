@@ -6,14 +6,13 @@ The following files in this repo are NOT in scope for the bounty:
 
 - `test/*` — PoC harness; researcher-authored, not deployed code
 - `script/*` — Empty placeholder; no deployment scripts in scope
-- `lib/instascope-vendor/@openzeppelin/*` — Vendored OpenZeppelin (frozen at deployed bytecode); third-party dependency
-- `lib/instascope-vendor/@layerzerolabs/*` — Vendored LayerZero V2 OApp/Protocol contracts; third-party dependency
-- `lib/forge-std/*` — Foundry test framework
+- `src/<Name>_<addr4>/@openzeppelin/**`, `**/@layerzerolabs/**`, `**/@chainlink/**`, `**/@pythnetwork/**`, `**/@solady/**`, `**/forge-std/**`, `**/ds-test/**`, `**/hardhat/**`, `**/eth-gas-reporter/**`, `**/node_modules/**`, `**/lib/openzeppelin-*/**`, `**/lib/forge-std/**`, `**/lib/solady/**` — Vendored third-party dependencies that ship with each verified-source bundle. Frozen at deployed-bytecode versions; bugs in these libraries are explicitly excluded by Immunefi default rules.
+- `lib/forge-std/*` — Foundry test framework (used only by `test/PoC.t.sol`)
 - `docs/*` — Crawled protocol documentation (reference material only)
-- `docsGetter.py` — Local docs-fetch utility (already gitignored)
+- `docsGetter.py`, `.tools/*` — Local fetch utilities and tooling logs (already gitignored)
 - `.venv/`, `cache/`, `out/`, `broadcast/` — build / runtime artifacts
 
-Only the four files listed in `nexus.scope.md` are in scope.
+Only the source files listed in `nexus.scope.md` are in scope (one entry per protocol-authored `.sol` file across the 132 in-scope contracts).
 
 ## Out-of-Scope Attack Vectors
 
@@ -69,7 +68,9 @@ The following are intentional design choices in `ListaOFT.sol`, not bugs:
 
 ## Admin Roles & Trust Levels
 
-ListaOFT exposes three privileged roles. Findings that require any of these to act maliciously are out of scope unless the report demonstrates that the action enables harm beyond their documented authority.
+The Lista DAO scope spans 132 contracts across 4 protocol stacks (CDP, liquid-staking, lending, cross-chain bridge). A full per-contract role inventory is impractical, but the **same trust pattern applies across the protocol**: privileged operations on each contract are gated to the Lista DAO Safes, and findings that require key compromise of any of those Safes are out of scope.
+
+The Safes verified on-chain via this repo's bridge-side audit are documented below as a representative example (these same addresses are also the protocol-level admins on most BSC contracts; verify per-contract before reporting).
 
 ### 1. Owner — `0x8d388136d578dCD791D081c6042284CED6d9B0c6`
 

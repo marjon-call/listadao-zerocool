@@ -10,3 +10,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# tooling logs
+.tools/build.log
+.tools/bulk_fetch.log

@@ -10,18 +10,18 @@ $(NEXUS_RESULT):
 		exit 0; \
 	fi
 	git submodule update --init --recursive
-	forge build
+	./build.sh
 	@printf '%s\n' \
 		'language: solidity' \
 		'build_targets:' \
 		'  - .' \
-		'installation_script: "git submodule update --init --recursive && forge build"' \
+		'installation_script: "git submodule update --init --recursive && ./build.sh"' \
 		'run_test_command: "forge test"' \
-		'developer_note: ""' \
+		'developer_note: "132 in-scope contracts compiled via per-contract Foundry profiles (5 distinct solc versions). Each contract lives under src/<Name>_<addr4>/ with verified-source bytes pulled directly from BscScan/Etherscan. Use FOUNDRY_PROFILE=contract_<Name>_<addr4> forge build to compile a single contract."' \
 		'blocking_error: ""' \
 		> $(NEXUS_RESULT)
 	@echo "Wrote $(NEXUS_RESULT)"
 
 clean:
 	rm -f $(NEXUS_RESULT)
-	forge clean
+	rm -rf out/ cache/
