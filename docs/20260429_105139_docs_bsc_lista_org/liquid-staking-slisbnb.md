@@ -1,0 +1,38 @@
+---
+source: https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb
+crawled_at: 2026-04-29T10:51:39.124352
+---
+
+## [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb\#shen-me-shi-liu-dong-xing-zhi-ya)    什么是流动性质押？
+
+流动性质押是指在保持流动性访问的同时，在权益证明（PoS）区块链上质押您的加密资产。通常，这是通过接收由质押协议铸造的流动性质押代币（LST）来完成的。
+
+传统上，当用户在PoS网络中质押他们的加密货币时，资产会被锁定一段时间，不能被解除质押或转移。流动性质押引入了这些质押资产的代币化版本，这些代币可以在它们仍然被质押的同时被交易、出售或用于去中心化金融（DeFi）应用。
+
+这些流动性质押代币通常以1:1的比例发行对应于质押资产，并以与原始质押资产相同的方式赚取奖励。因此，它们允许用户同时保障网络安全、赚取质押奖励，并具有参与加密经济其他部分的灵活性。
+
+slisBNB是Lista DAO为质押BNB而发行的LST，是解锁整个Lista生态系统的关键。
+
+## [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb\#liu-dong-xing-zhi-ya-de-hao-chu)    流动性质押的好处
+
+正如名称所示，流动性质押的一个主要优势是流动性，因为它允许用户在保持交易或在去中心化金融（DeFi）应用中使用它们的灵活性的同时质押他们的代币，无需等待锁定期结束。这种灵活性提高了资本效率，并使用户能够迅速利用市场机会。
+
+总的来说，流动性质押在当前DeFi生态系统中提供了三个关键优势：
+
+#### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb\#ti-gao-zi-ben-xiao-l)    提高资本效率
+
+传统质押为用户提供了通过验证交易来获得奖励的机会。流动性质押允许用户在继续获得这些奖励的同时，通过各种DeFi协议生成额外的收益。这种方法通过使质押资产能够同时参与质押奖励和其他DeFi活动，最大化了质押资产的效用。
+
+#### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb\#jie-suo-liu-dong-xing)    解锁流动性
+
+与通常需要长时间“解绑”期的传统质押协议不同，流动性质押代币（LSTs）提供了灵活性，使得用户可以迅速退出位置或参与市场活动。通过将质押资产转换为代币，LSTs解锁了它们的固有价值，允许它们在DeFi协议中被交易和用作抵押。
+
+#### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb\#defi-zhong-de-ke-zu-he-xing)    DeFi中的可组合性：
+
+LSTs通过允许用户在一个平台上质押，同时在另一个平台利用他们的LSTs，增强了灵活性。这些代币代表质押资产的收据，使它们与广泛的DeFi应用兼容，包括借贷池和预测市场。
+
+[Previous技术指南chevron-left](https://docs.bsc.lista.org/zh-cn/jian-jie/collateral-debt-position-lisusd/technical-guide) [Next关于 slisBNBchevron-right](https://docs.bsc.lista.org/zh-cn/jian-jie/liquid-staking-slisbnb/about-slisbnb)
+
+Last updated 1 month ago
+
+Was this helpful?

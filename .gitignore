@@ -1,0 +1,12 @@
+docsGetter.py
+
+# foundry
+out/
+cache/
+broadcast/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/

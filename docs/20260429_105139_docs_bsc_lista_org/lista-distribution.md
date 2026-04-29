@@ -1,0 +1,153 @@
+---
+source: https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution
+crawled_at: 2026-04-29T10:51:39.141514
+---
+
+注意：此页面解释了LISTA在启动时的代币经济模型。要获取最新的代币经济信息，请参考[此页面](https://docs.bsc.lista.org/zh-cn/zhi-li/lista)。
+
+## [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#qi-dong-shi-de-liu-tong-gong-ying-liang)    启动时的流通供应量
+
+流通供应量指的是LISTA代币总量中可自由交易的部分，没有特定的转移限制。
+
+以下是Lista启动时流通供应量的详细信息：
+
+1. 启动时，分配给Binance Megadrop的LISTA总代币供应量的10%已解锁。
+
+2. 启动时，分配给我们的空投活动的LISTA总代币供应量的8.5%已解锁。
+
+3. 启动时，分配给生态系统增长的LISTA总代币供应量的3.5%已解锁。
+
+4. 启动时，分配给投资者和顾问的LISTA总代币供应量的1%已解锁。
+
+
+这使得LISTA在启动时（6月20日）的总流通供应量设定为23%，即230,000,000 LISTA代币。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#xia-biao-shi-lista-dai-bi-fen-pei-de-xi-fen)    下表是LISTA代币分配的细分。
+
+代币名称
+
+Lista
+
+Binance Megadrop
+
+总代币供应量的10.00%
+
+空投
+
+总代币供应量的10.00%
+
+投资者与顾问
+
+总代币供应量的19.00%
+
+团队
+
+总代币供应量的3.50%
+
+社区
+
+总代币供应量的40.00%
+
+DAO财库
+
+总代币供应量的8.00%
+
+生态系统
+
+总代币供应量的9.50%
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#binance-megadrop-10.00)    Binance Megadrop（10.00%）
+
+分配给Binance Megadrop的全部代币供应量将在启动时解锁。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#kong-tou-10.00)    空投（10.00%）
+
+在启动时，分配给Lista DAO空投的代币中的85%，即总代币供应量的8.5%，将被解锁。
+
+剩余的15%，即LISTA总代币供应量的1.5%，将在2025年第二季度解锁。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#tou-zi-zhe-yu-gu-wen-19.00)    投资者与顾问（19.00%）
+
+分配给投资者与顾问的总代币供应量的1%将在启动时解锁。
+
+剩余的18%将被锁定，直到2025年6月的一年悬崖期结束。从2025年6月开始，这部分将按季度线性解锁，持续两年，直到2027年3月。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#tuan-dui-3.50)    团队（3.50%）
+
+分配给Lista DAO团队的全部代币供应量（3.50%）将被锁定，直到2025年6月的一年悬崖期结束，首次解锁将在2025年6月进行。
+
+从2025年6月开始，分配给Lista DAO团队的3.50%代币供应量将按季度（每3个月）线性解锁，持续5年，直到2029年3月。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#she-qu-40.00)    社区（40.00%）
+
+在启动时，分配给社区激励的代币供应量将用于推动各种DeFi活动的代币发放，如Lista DAO的LP奖励、lisUSD单独质押池等。
+
+LISTA代币向这些社区激励的发放将从7月开始，并将按照每年1/√2的递减速率持续发放，持续20年，直到2044年6月。
+
+社区激励的代币发放将遵循以下公式：![](https://docs.bsc.lista.org/~gitbook/image?url=https%3A%2F%2F1970575934-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FqKEnrN8hBs4vtubIKxE5%252Fuploads%252Fgit-blob-b891acf6da707908be4ee23ba578baac7defb387%252Fimage%2520%2826%29.png%3Falt%3Dmedia&width=300&dpr=3&quality=100&sign=a8fa424e&sv=2)
+
+**n**：当n=1时，代表第一年的代币发放。在最后一年，n=20
+
+**r**：r是几何级数的公共比率：1/√2
+
+**S**：S是几何级数的总和：即代币发放的40%，相当于400 million LISTA
+
+由于Lista DAO仍处于过渡阶段，当前的发放率设定为 **每周540,000 LISTA**，低于预期的每月9,772,651 LISTA的发放率。
+
+#### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#lista-dao-guo-du-jie-duan)    Lista DAO过渡阶段
+
+在Lista DAO向完全去中心化自治组织（DAO）过渡期间，原计划的Lista DAO代币发放（第一年每月9,772,651 LISTA）将被分成两个相等的部分，每部分4,886,325.5 LISTA。
+
+第一部分：第一年每月4,886,325.5 LISTA的LISTA代币发放（第一部分）将根据当前需求每月动态调整。在发放这部分代币之前，社区将被适当通知。
+
+第二部分：第一年每月4,886,325.5 LISTA的Lista代币发放（第二部分）将用于社区激励，但不会立即发放。发放量将根据Lista平台部署的进展逐渐增加。增加的发放量将被限制在每周1,221,581 LISTA，或换句话说，长期来看是每月4,886,325.5 LISTA。
+
+目前，LISTA的发放率设定为 **每周540,00 LISTA**。所有剩余未发放的LISTA代币将继续分配给社区激励，未来的发放率决定将通过DAO投票进行。随着我们完成向DAO的过渡，调整LISTA当前发放参数的权力也将逐渐转移给veLISTA持有者。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#dao-cai-ku-8.00)    DAO财库（8.00%）
+
+分配给Lista DAO财库的全部代币供应量（8.00%）将被锁定，直到2024年9月的3个月悬崖期结束，首次解锁将在2024年9月进行。
+
+从2024年9月开始，分配给Lista DAO财库的8.00%代币供应量将按季度（每3个月）线性解锁，持续4年，直到2028年6月。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/lista-distribution\#sheng-tai-xi-tong-9.50)    生态系统（9.50%）
+
+分配给生态系统激励的总代币供应量的3.50%将在启动时解锁。
+
+剩余的6%代币供应量将按照下表所示，每季度（每3个月）解锁，持续5年，直到2029年6月：
+
+日期
+
+每季度LISTA解锁量
+
+分配给生态系统激励的解锁供应量
+
+2024年6月
+
+35,000,000
+
+35,000,000 (3.50%)
+
+2024年7月 - 2025年3月
+
+3,125,000
+
+44,375,000 (4.4375%)
+
+2025年6月 - 2028年6月
+
+3,750,000
+
+93,125,000 (9.3125%)
+
+2028年9月 - 2029年3月
+
+625,000
+
+95,000,000 (9.50%)
+
+[PreviousLISTAchevron-left](https://docs.bsc.lista.org/zh-cn/zhi-li/lista) [Next治理chevron-right](https://docs.bsc.lista.org/zh-cn/zhi-li/lista/governance)
+
+Last updated 1 day ago
+
+Was this helpful?

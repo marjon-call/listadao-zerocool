@@ -1,0 +1,32 @@
+---
+source: https://docs.bsc.lista.org/introduction/lista-credit
+crawled_at: 2026-04-29T10:51:39.154673
+---
+
+Lista Credit offers unsecured, small-amount credit lending. Currently, Lista Credit and its credit system is only open to Binance MPC wallet addresses.
+
+### [hashtag](https://docs.bsc.lista.org/introduction/lista-credit\#credit-system)    Credit System
+
+The entire Lista Credit product is powered by Lista’s proprietary credit system. Under this system, each Binance MPC wallet address will be given a credit level based on their portfolio and on-chain activities. Then, every address will be given a credit limit based on their credit level.
+
+Every month, Lista will reassess all eligible wallet addresses and give them a new credit level. The more assets you have, the more interactions you have with DeFi protocols, the more likely you are to receive a higher credit limit.
+
+### [hashtag](https://docs.bsc.lista.org/introduction/lista-credit\#borrowing-and-repaying)    Borrowing & Repaying
+
+Depending on its credit level, a wallet address can get up to a 50 $U ($50) credit limit. Lista does not charge interest for Credit borrowing but the moment a loan is taken, a fixed origination fee (3%) will be charged. Credit loans plus their origination fees must be repaid within 14 days. Overdue loans will get an extension of 3 days. If it is still not fully repaid after the extension, a fixed fine (3%) will be charged and the corresponding wallet address will be blacklisted.
+
+Blacklisted addresses will be restricted on Lista Credit. The only way to lift this restriction is to repay all its loan plus fees in full. When a blacklisted address repays all its loans and fees, it will be released from the blacklist with half its previous credit. Two weeks later, its credit level will be fully reinstated.
+
+Every day, Lista will pick 1 Daily Lucky Star that repaid its Credit loans of at least 15 $U (plus interest) to receive 1,000 $LISTA. Every week, Lista will also pick 1 Weekly Grand Prize that repaid its Credit loans to receive 10,000 $LISTA. Candidates must not have any outstanding Credit loans at the time of our picking and rewards can be claimed within 48 hours after a winner has been selected.
+
+### [hashtag](https://docs.bsc.lista.org/introduction/lista-credit\#lending)    Lending
+
+Currently, all $U available for borrow on Lista Credit are from a dedicated vault created by Lista and its partners.
+
+Lista will offer credit lending vaults for everyone to lend assets to credit loan borrowers. These vaults give depositors very competitive rates at slightly higher risks. The average return for Lista Credit loans are higher than their collateralized counterparts but the default rates are also likely higher. Please do your own research and employ robust risk mitigation strategies before depositing into these vaults.
+
+[PreviousRWA Marketschevron-left](https://docs.bsc.lista.org/introduction/rwa-markets) [NextLista Lendingchevron-right](https://docs.bsc.lista.org/introduction/lista-lending)
+
+Last updated 1 month ago
+
+Was this helpful?

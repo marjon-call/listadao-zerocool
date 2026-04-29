@@ -1,0 +1,59 @@
+---
+source: https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults
+crawled_at: 2026-04-29T10:51:39.125181
+---
+
+Lista金库包含单一贷款资产，并将其与多个Lista市场的潜在借款人匹配。任何钱包地址都可以存入金库，以赚取来自借款人利息支付的被动收益。金库的存款人将赚取借款人支付的利息的一部分。只要使用率不达到99.99%，存款人随时可以撤回他们的资产。
+
+在Lista，金库采用自动化风险管理，动态调整所有存入资产的风险敞口，减轻存款人的持续监控和管理压力，同时存款人保留对其资产的控制权，并可以随时撤回其流动性，只要拟议的提款不会将金库的使用率推高到99.99%或更高。
+
+作为一个无需许可的借贷协议，Lista还允许第三方创建和策划金库。Lista DAO不审查、审核、认证或认可第三方金库或其各自的策展人。请阅读我们的[第三方金库风险披露arrow-up-right](https://github.com/lista-dao/gitbook/blob/zh-CN/introduction/lista-lending/third-party-vault-risk-management.md)，并在存入第三方策划的金库之前采用强有力的风险缓解方法。
+
+## [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#jin-ku-yu-shi-chang)    金库与市场
+
+金库中的资产可能会与提供相同资产的几个市场配对。根据抵押品、其与贷款资产的关系以及供需情况，这些市场可能有不同的参数，如清算贷款价值（LLTV）比率、利率和费率。
+
+## [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#he-xin-can-yu-zhe-yu-zu-jian)    核心参与者与组件
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-1.-yu-yan-ji)    1\. 预言机
+
+Lista Lending从一篮子不同的预言机中获取其价格信息，备份以最小化价格操纵的风险和影响。
+
+目前，Lista的价格预言机包括：
+
+- Chainlink（主预言机）
+
+- Binance Oracle（检查预言机）
+
+- Redstone（备用预言机）
+
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-2.-jin-ku-suo-you-zhe)    2\. 金库所有者
+
+在Lista，金库所有者可以决定将资金投资于哪些市场。默认情况下，存款人将风险管理委托给金库所有者，后者拥有完全控制权。金库所有者将对存入金库的资产发生的事情负全部责任。更多信息请参考我们的[风险披露arrow-up-right](https://github.com/lista-dao/gitbook/blob/zh-CN/introduction/lista-lending/third-party-vault-risk-management.md)。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-3.-zi-ding-yi-huai-zhang-chu-li)    3\. 自定义坏账处理
+
+坏账可以被摊销（分散，随时间逐渐减少）或手动处理。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-4.-zhang-hu-guan-li)    4\. 账户管理
+
+通过传统函数调用或基于[EIP-712arrow-up-right](https://eips.ethereum.org/EIPS/eip-712)标准的消息签名操作。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-5.-shi-jian-suo)    5\. 时间锁
+
+金库所有者可以选择设置时间锁，以管理关键参数变更和风险管理流程。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-6.-jin-ku-fei-yong)    6\. 金库费用
+
+金库可以独立收取费用，最高可达其生成利润的50%，这些资金的具体用途由金库所有者决定。
+
+### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults\#id-7.-zhi-pai-zhe)    7\. 指派者
+
+金库可以指定一个分配者或策展者角色，负责在各个市场之间战略性地分配流动性。
+
+[PreviousLista 借贷chevron-left](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending) [NextLista Alpha 区chevron-right](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/vaults/lista-alpha-zone)
+
+Last updated 1 month ago
+
+Was this helpful?

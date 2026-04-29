@@ -1,0 +1,2 @@
+@openzeppelin/=lib/instascope-vendor/@openzeppelin/
+@layerzerolabs/=lib/instascope-vendor/@layerzerolabs/

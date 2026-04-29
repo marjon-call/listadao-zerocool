@@ -1,0 +1,7 @@
+language: solidity
+build_targets:
+  - .
+installation_script: "git submodule update --init --recursive && forge build"
+run_test_command: "forge test"
+developer_note: ""
+blocking_error: ""

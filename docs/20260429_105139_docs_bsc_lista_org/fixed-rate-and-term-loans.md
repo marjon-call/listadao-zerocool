@@ -1,0 +1,36 @@
+---
+source: https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/fixed-rate-and-term-loans
+crawled_at: 2026-04-29T10:51:39.126552
+---
+
+在Lista借款时，有两种利率和期限选项可供选择：灵活和固定。
+
+灵活利率的工作方式与Lista DAO的其他借贷产品相同，借款人可以随时借款和偿还贷款，利率会根据利用率波动，这由我们的[利率模型arrow-up-right](https://docs.bsc.lista.org/introduction/lista-lending/interest-rate-model-irm)所决定。
+
+固定利率要求借款人选择一个固定的贷款期限，并在整个期限内锁定利率。可选的期限包括7天、14天和30天。固定利率将根据市场条件与当前的灵活利率不同。
+
+借款人可以选择在期限到期前部分或全部偿还贷款，但必须接受等于剩余利息50%的罚金。
+
+假设Alice借了10,000 lisUSD，利率为2%（年利率），期限为14天。如果Alice在5天后选择偿还6,000 lisUSD，则：
+
+总利息 = 10000 \* 2% \* 5/365 = 2.74 lisUSD
+
+这意味着Alice首先偿还她的利息（2.74 lisUSD），然后是本金6,000 - 2.74 = 5,997.26 lisUSD
+
+但由于Alice在期限到期前偿还了贷款，她将接受等于剩余利息50%的罚金：
+
+50% \* 5997.26 \* 2% \* (14-5)/365 = 1.48 lisUSD
+
+Alice偿还的6,000 lisUSD中的本金金额为：6000 - 2.74 - 1.48 = 5995.78 lisUSD
+
+这意味着Alice将支付2.74 lisUSD的利息，1.48 lisUSD的罚金和5995.78 lisUSD的本金。
+
+因此，在期限内的任何时候，贷款偿还的最低金额必须大于累积的利息和罚金，因为必须首先偿还利息和罚金。
+
+当其期限到期时，固定期限贷款将转为灵活贷款。
+
+[Previous利率模型 (IRM)chevron-left](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/interest-rate-model-irm) [Next费用chevron-right](https://docs.bsc.lista.org/zh-cn/jian-jie/lista-lending/fees)
+
+Last updated 1 month ago
+
+Was this helpful?

@@ -1,0 +1,43 @@
+---
+source: https://docs.bsc.lista.org/zh-cn/jian-jie/collateral-debt-position-lisusd
+crawled_at: 2026-04-29T10:51:39.119245
+---
+
+Lista DAO 作为一个开源的 CDP 协议，用户可以存入各种加密资产（BNB、ETH、稳定币和其他加密货币）作为抵押，并借用我们的去中心化稳定币 **lisUSD**。它使用并扩展了 MakerDAO 模型，这是一个去中心化、无偏见、以抵押品支持的稳定币模型。
+
+## [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/collateral-debt-position-lisusd\#wei-shen-me-xuan-ze-lista-dao)    为什么选择 Lista DAO？
+
+许多稳定币协议变得过于依赖一个模型（完全抵押）或转向另一个极端（完全算法化，无后盾）。
+
+抵押式稳定币要么带来托管风险，要么需要链上过度抵押。这些模型提供了相对紧密的挂钩，比纯算法设计更能增强信心。
+
+纯算法设计，如 Basis、Empty Set Dollar 和 Seigniorage Shares，提供了一个高度无信任和可扩展的模型，捕捉了早期比特币的去中心化货币愿景，但在稳定性方面存在不足。
+
+不幸的是，我们在过去十年中看到的去中心化加密贷款模型对于民主化金融服务几乎没有帮助。大多数基于区块链的贷款协议承诺低费用、快速执行和高回报，但它们继续受到设计上的低效率困扰，这源于“稳定币三难问题”。这个三难问题迫使稳定币开发者专注于可能牺牲去中心化、价格稳定性或资本效率的机制。
+
+Lista DAO 的目的是提出一个解决方案，针对过度抵押稳定币所经历的资本效率问题，允许用户通过抵押债务头寸（CDP）来杠杆他们的资金。通过 Liquid Staking 的结合、MakerDAO 模型的功能性以及来自 DEX 上 LP 的额外流动性，Lista 将避免因价格不稳定而导致的资金冻结（法币支持）或价值损失（算法）等问题。
+
+Lista 由经验丰富的 DeFi 专家和智能合约开发者建立，旨在将世界级革命性的 lisUSD 稳定币定位为最广泛使用的稳定币，通过利用 Proof-of-Stake (PoS) 奖励、Binance Liquid Staking 和产生收益的资产。
+
+Lista DAO 旨在通过激励借款人和持币者成为新的去中心化经济规模的一部分，帮助推动区块链技术进入主流应用。
+
+#### [hashtag](https://docs.bsc.lista.org/zh-cn/jian-jie/collateral-debt-position-lisusd\#lista-dao-allows-users-to)    Lista DAO 允许用户：
+
+- 抵押 BNB。
+
+- 借用 lisUSD
+
+- Farm lisUSD
+
+- 还款贷款（lisUSD + 借款利息）
+
+- 提取抵押品
+
+- 为借用 lisUSD 领取 LISTA 奖励
+
+
+[Previous使用条款chevron-left](https://docs.bsc.lista.org/zh-cn/jian-jie/terms-of-use) [Next抵押品chevron-right](https://docs.bsc.lista.org/zh-cn/jian-jie/collateral-debt-position-lisusd/collateral)
+
+Last updated 1 month ago
+
+Was this helpful?

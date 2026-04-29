@@ -1,0 +1,14 @@
+# Foundry configuration for ListaOFT (slisBNB) on Ethereum mainnet
+# Deployed at 0xf9B24C9364457Ea85792179D285855753549eBAa
+# Verified-source files preserved byte-for-byte under src/ and lib/instascope-vendor/.
+
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+script = "script"
+cache_path = "cache"
+solc = "0.8.20"
+optimizer = true
+optimizer_runs = 1000
